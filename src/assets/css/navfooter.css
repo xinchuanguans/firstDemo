@@ -10,7 +10,8 @@
   bottom: 0;
 }
 .service{
-  background-color:pink;
+  /*background-color:pink;*/
   height: 80px;
   display: flex;
+  justify-content: space-evenly;
 }

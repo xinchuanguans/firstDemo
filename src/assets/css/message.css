@@ -1,0 +1,10 @@
+.msg{
+  width: 1000px;
+  background-color:white;
+  height: 500px;
+  margin: 0 10px;
+  border: 1px solid black;
+}
+.msg-title{
+  border-bottom: 2px solid saddlebrown;
+}

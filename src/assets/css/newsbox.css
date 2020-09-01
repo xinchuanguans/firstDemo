@@ -1,0 +1,25 @@
+.newsbox{
+  width: 600px;
+  height: 600px;
+  border: 1px solid yellow;
+  background-color:white;
+}
+.fr{
+  float: right;
+}
+.boxname{
+  background-color: #e3e3e3;
+  height: 25px;
+}
+.newslist{
+  padding: 0;
+  margin: 0;
+}
+.newslist ul{
+  padding: 0;
+  margin: 0;
+}
+.newslist li{
+  list-style: none;
+  border-bottom: 1px solid #bababa;
+}

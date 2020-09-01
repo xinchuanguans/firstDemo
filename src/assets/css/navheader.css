@@ -1,0 +1,68 @@
+.nav-header{
+  background: #42b983;
+  height: 120px;
+  margin: 0 ;
+  padding: 0;
+}
+.start{
+  /*background: red;*/
+  height: 80px;
+  line-height: 80px;
+  flex: border-box;
+  border-bottom: 1px solid darkgreen;
+  color: white;
+}
+a{
+  text-decoration: none;
+}
+.logo{
+  height: 80px;
+  margin: 0;
+  padding: 0;
+}
+.logo h1{
+  font-size: 20px;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.nav-item{
+  /*background: aquamarine;*/
+  height: 40px;
+  width: auto;
+  position: absolute;
+  left: 100px;
+  line-height: 40px;
+}
+.nav-item ul{
+  margin: 0;
+  padding: 0;
+}
+.nav-item ul li{
+  float: left;
+  list-style: none;
+}
+.nav-item ul li a{
+  padding:8px 20px;
+}
+.nav-item ul li a:hover{
+  background: antiquewhite;
+}
+.clearfix:after{
+
+  content:"";//设置内容为空
+
+　height:0;//高度为0
+
+　line-height:0;//行高为0
+
+　display:block;//将文本转为块级元素
+
+　visibility:hidden;//将元素隐藏
+
+　clear:both//清除浮动
+
+}

@@ -1,0 +1,18 @@
+.login{
+  background-color: antiquewhite;
+  display: flex;
+  width: 300px;
+  height: 300px;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.login form-item{
+  margin: 0 20px;
+}
+.center{
+
+}
+.submit{
+  width: 50px;
+  padding: 2px;
+}

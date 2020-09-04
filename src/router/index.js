@@ -1,9 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import login from '@/components/login'
-import register from '@/components/register'
 import index1 from '../views/index1'
 import profiles from '../views/profiles'
+import HelloWorld from "../components/HelloWorld";
 
 
 Vue.use(Router)
@@ -17,20 +16,15 @@ const router = new Router({
       component: index1,
     },
     {
-      path: '/profiles',
+      path: '/profiles/:id',
       name: 'profiles',
       component: profiles
     },
     {
-      path: '/login',
-      name: 'login',
-      component: login
+      path: '/test',
+      name: 'test',
+      component: HelloWorld
     },
-    {
-      path: '/register',
-      name: 'register',
-      component: register
-    }
   ]
 })
 // router.beforeEach((to, from, next) => {

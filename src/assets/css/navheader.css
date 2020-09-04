@@ -1,13 +1,13 @@
 .nav-header{
   background: #42b983;
-  height: 120px;
+  height: 150px;
   margin: 0 ;
   padding: 0;
 }
 .start{
   /*background: red;*/
-  height: 80px;
-  line-height: 80px;
+  height: 110px;
+  line-height: 130px;
   flex: border-box;
   border-bottom: 1px solid darkgreen;
   color: white;
@@ -16,7 +16,7 @@ a{
   text-decoration: none;
 }
 .logo{
-  height: 80px;
+  height: 110px;
   margin: 0;
   padding: 0;
 }
@@ -33,22 +33,15 @@ a{
   /*background: aquamarine;*/
   height: 40px;
   width: auto;
+  display: flex;
   position: absolute;
   left: 100px;
   line-height: 40px;
 }
-.nav-item ul{
-  margin: 0;
-  padding: 0;
+.nav-menu{
+  padding: 10px 15px;
 }
-.nav-item ul li{
-  float: left;
-  list-style: none;
-}
-.nav-item ul li a{
-  padding:8px 20px;
-}
-.nav-item ul li a:hover{
+.nav-menu:hover{
   background: antiquewhite;
 }
 .clearfix:after{

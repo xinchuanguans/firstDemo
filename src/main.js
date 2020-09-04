@@ -6,9 +6,13 @@ import router from './router'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import Vuex from "vuex"
 import axios  from "axios"
+import Antd from "ant-design-vue"
+import "ant-design-vue/dist/antd.css"
 import 'swiper/css/swiper.css'
-// import store from "./store";
-Vue.use(VueAwesomeSwiper,Vuex,axios)
+// import store from "./store"
+Vue.use(Vuex,axios)
+Vue.use(VueAwesomeSwiper)
+Vue.use(Antd)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

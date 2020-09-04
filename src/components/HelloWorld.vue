@@ -1,86 +1,31 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li>
-        <a
-          href="https://vuejs.org"
-          target="_blank"
-        >
-          Core Docs
+  <layout class="bc">
+    <header class="hc">{{headermsg}}</header>
+    <slider class="sc">{{slidermsg}}</slider>
+    <content class="cc">{{contentmsg}}
+      <a-dropdown>
+        <a class="ant-dropdown-link" @click="e => e.preventDefault()">
+          Hover me <a-icon type="down" />
         </a>
-      </li>
-      <li>
-        <a
-          href="https://forum.vuejs.org"
-          target="_blank"
-        >
-          Forum
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://chat.vuejs.org"
-          target="_blank"
-        >
-          Community Chat
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://twitter.com/vuejs"
-          target="_blank"
-        >
-          Twitter
-        </a>
-      </li>
-      <br>
-      <li>
-        <a
-          href="http://vuejs-templates.github.io/webpack/"
-          target="_blank"
-        >
-          Docs for This Template
-        </a>
-      </li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li>
-        <a
-          href="http://router.vuejs.org/"
-          target="_blank"
-        >
-          vue-router
-        </a>
-      </li>
-      <li>
-        <a
-          href="http://vuex.vuejs.org/"
-          target="_blank"
-        >
-          vuex
-        </a>
-      </li>
-      <li>
-        <a
-          href="http://vue-loader.vuejs.org/"
-          target="_blank"
-        >
-          vue-loader
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/awesome-vue"
-          target="_blank"
-        >
-          awesome-vue
-        </a>
-      </li>
-    </ul>
-  </div>
+        <a-menu slot="overlay">
+          <a-menu-item>
+            <a href="javascript:;">1st menu item</a>
+          </a-menu-item>
+          <a-menu-item>
+            <a href="javascript:;">2nd menu item</a>
+          </a-menu-item>
+          <a-menu-item>
+            <a href="javascript:;">3rd menu item</a>
+          </a-menu-item>
+        </a-menu>
+      </a-dropdown>
+    </content>
+    <footer class="fc">{{footermsg}}</footer>
+  </layout>
+
+
+
+
 </template>
 
 <script>
@@ -88,26 +33,32 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      headermsg: 'header',
+      footermsg:'footer',
+      slidermsg:'slider',
+      contentmsg:'content'
     }
+  },
+  components:{
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
+.bc{
+  background-color: #42b983;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+.sc{
+  background-color: #2c3e50;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
+.cc{
+  background-color: aqua;
 }
-a {
-  color: #42b983;
+.hc{
+  background-color: red;
+}
+.fc{
+  background-color: yellow;
 }
 </style>

@@ -1,17 +1,10 @@
 .menulist{
-  border:1px solid #2c3e50 ;
-  background-color:white;
+  height:100%;
+  borderRight: 0
+}
+.menubox{
   width: 200px;
   height: 500px;
   margin: 0 10px;
-}
-.menulist ul{
-  margin: 0;
-  padding: 0;
-}
-.menulist ul li{
-  list-style: none;
-  text-align: center;
-  border-bottom: 1px solid black;
 }
 

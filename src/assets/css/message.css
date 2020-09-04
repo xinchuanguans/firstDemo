@@ -1,10 +1,14 @@
 .msg{
   width: 1000px;
-  background-color:white;
   height: 500px;
   margin: 0 10px;
-  border: 1px solid black;
 }
-.msg-title{
-  border-bottom: 2px solid saddlebrown;
+/*.ant-breadcrumb{*/
+/*  margin: 16px 0;*/
+/*}*/
+.textbox{
+  background: #fff;
+  padding: 24px;
+  margin: 0;
+  minHeight: 280px
 }

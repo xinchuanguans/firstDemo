@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <layout>
     <nav-header></nav-header>
-    <div class="main">
+    <a-layout >
       <menu-list></menu-list>
       <message></message>
-    </div>
+    </a-layout>
     <nav-footer></nav-footer>
-  </div>
+  </layout>
 </template>
 <script>
 import NavHeader from "../components/NavHeader.vue"
